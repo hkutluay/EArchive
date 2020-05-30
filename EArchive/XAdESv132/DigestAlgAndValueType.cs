@@ -1,34 +1,39 @@
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://uri.etsi.org/01903/v1.3.2#")]
-public partial class DigestAlgAndValueType
+using EArchive.XmlDSig;
+
+namespace EArchive.XAdESv132
 {
-    private DigestMethodType digestMethodField;
-    private byte[] digestValueField;
-    [System.Xml.Serialization.XmlElementAttribute(Namespace = "http://www.w3.org/2000/09/xmldsig#")]
-    public DigestMethodType DigestMethod
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://uri.etsi.org/01903/v1.3.2#")]
+    public partial class DigestAlgAndValueType
     {
-        get
+        private DigestMethodType digestMethodField;
+        private byte[] digestValueField;
+        [System.Xml.Serialization.XmlElementAttribute(Namespace = "http://www.w3.org/2000/09/xmldsig#")]
+        public DigestMethodType DigestMethod
         {
-            return this.digestMethodField;
+            get
+            {
+                return this.digestMethodField;
+            }
+            set
+            {
+                this.digestMethodField = value;
+            }
         }
-        set
+        [System.Xml.Serialization.XmlElementAttribute(Namespace = "http://www.w3.org/2000/09/xmldsig#", DataType = "base64Binary")]
+        public byte[] DigestValue
         {
-            this.digestMethodField = value;
-        }
-    }
-    [System.Xml.Serialization.XmlElementAttribute(Namespace = "http://www.w3.org/2000/09/xmldsig#", DataType = "base64Binary")]
-    public byte[] DigestValue
-    {
-        get
-        {
-            return this.digestValueField;
-        }
-        set
-        {
-            this.digestValueField = value;
+            get
+            {
+                return this.digestValueField;
+            }
+            set
+            {
+                this.digestValueField = value;
+            }
         }
     }
 }

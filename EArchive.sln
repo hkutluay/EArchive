@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30104.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EArchive", "EArchive\EArchive.csproj", "{FBDA0ECE-7A11-48AD-89B0-0266F74D4639}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EArchive", "EArchive\EArchive.csproj", "{FBDA0ECE-7A11-48AD-89B0-0266F74D4639}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EArchive.Test", "EArchive.Test\EArchive.Test.csproj", "{BB9C46FA-DF2D-45D0-9576-E4122364EA01}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{FBDA0ECE-7A11-48AD-89B0-0266F74D4639}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBDA0ECE-7A11-48AD-89B0-0266F74D4639}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBDA0ECE-7A11-48AD-89B0-0266F74D4639}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB9C46FA-DF2D-45D0-9576-E4122364EA01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB9C46FA-DF2D-45D0-9576-E4122364EA01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB9C46FA-DF2D-45D0-9576-E4122364EA01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB9C46FA-DF2D-45D0-9576-E4122364EA01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

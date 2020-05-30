@@ -1,33 +1,35 @@
-//
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://earsiv.efatura.gov.tr")]
-public partial class satisTypeVergiDetay
+namespace EArchive.EArsiv
 {
-    private decimal vergiYuzdeField;
-    private decimal satisTutarField;
-    public decimal vergiYuzde
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://earsiv.efatura.gov.tr")]
+    public partial class satisTypeVergiDetay
     {
-        get
+        private decimal vergiYuzdeField;
+        private decimal satisTutarField;
+        public decimal vergiYuzde
         {
-            return this.vergiYuzdeField;
+            get
+            {
+                return this.vergiYuzdeField;
+            }
+            set
+            {
+                this.vergiYuzdeField = value;
+            }
         }
-        set
+        public decimal satisTutar
         {
-            this.vergiYuzdeField = value;
-        }
-    }
-    public decimal satisTutar
-    {
-        get
-        {
-            return this.satisTutarField;
-        }
-        set
-        {
-            this.satisTutarField = value;
+            get
+            {
+                return this.satisTutarField;
+            }
+            set
+            {
+                this.satisTutarField = value;
+            }
         }
     }
 }

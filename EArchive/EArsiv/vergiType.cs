@@ -1,33 +1,35 @@
-//
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://earsiv.efatura.gov.tr")]
-public partial class vergiType
+namespace EArchive.EArsiv
 {
-    private vergiTipEnum vergiAdiField;
-    private decimal vergiTutarField;
-    public vergiTipEnum vergiAdi
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://earsiv.efatura.gov.tr")]
+    public partial class vergiType
     {
-        get
+        private vergiTipEnum vergiAdiField;
+        private decimal vergiTutarField;
+        public vergiTipEnum vergiAdi
         {
-            return this.vergiAdiField;
+            get
+            {
+                return this.vergiAdiField;
+            }
+            set
+            {
+                this.vergiAdiField = value;
+            }
         }
-        set
+        public decimal vergiTutar
         {
-            this.vergiAdiField = value;
-        }
-    }
-    public decimal vergiTutar
-    {
-        get
-        {
-            return this.vergiTutarField;
-        }
-        set
-        {
-            this.vergiTutarField = value;
+            get
+            {
+                return this.vergiTutarField;
+            }
+            set
+            {
+                this.vergiTutarField = value;
+            }
         }
     }
 }

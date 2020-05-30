@@ -1,35 +1,38 @@
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://uri.etsi.org/01903/v1.3.2#")]
-[System.Xml.Serialization.XmlRootAttribute("CompleteCertificateRefs", Namespace = "http://uri.etsi.org/01903/v1.3.2#", IsNullable = false)]
-public partial class CompleteCertificateRefsType
+namespace EArchive.XAdESv132
 {
-    private CertIDType[] certRefsField;
-    private string idField;
-    [System.Xml.Serialization.XmlArrayItemAttribute("Cert", IsNullable = false)]
-    public CertIDType[] CertRefs
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://uri.etsi.org/01903/v1.3.2#")]
+    [System.Xml.Serialization.XmlRootAttribute("CompleteCertificateRefs", Namespace = "http://uri.etsi.org/01903/v1.3.2#", IsNullable = false)]
+    public partial class CompleteCertificateRefsType
     {
-        get
+        private CertIDType[] certRefsField;
+        private string idField;
+        [System.Xml.Serialization.XmlArrayItemAttribute("Cert", IsNullable = false)]
+        public CertIDType[] CertRefs
         {
-            return this.certRefsField;
+            get
+            {
+                return this.certRefsField;
+            }
+            set
+            {
+                this.certRefsField = value;
+            }
         }
-        set
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "ID")]
+        public string Id
         {
-            this.certRefsField = value;
-        }
-    }
-    [System.Xml.Serialization.XmlAttributeAttribute(DataType = "ID")]
-    public string Id
-    {
-        get
-        {
-            return this.idField;
-        }
-        set
-        {
-            this.idField = value;
+            get
+            {
+                return this.idField;
+            }
+            set
+            {
+                this.idField = value;
+            }
         }
     }
 }

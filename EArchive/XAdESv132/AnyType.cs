@@ -1,36 +1,39 @@
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://uri.etsi.org/01903/v1.3.2#")]
-[System.Xml.Serialization.XmlRootAttribute("Any", Namespace = "http://uri.etsi.org/01903/v1.3.2#", IsNullable = false)]
-public partial class AnyType
+namespace EArchive.XAdESv132
 {
-    private System.Xml.XmlNode[] anyField;
-    private System.Xml.XmlAttribute[] anyAttrField;
-    [System.Xml.Serialization.XmlTextAttribute()]
-    [System.Xml.Serialization.XmlAnyElementAttribute()]
-    public System.Xml.XmlNode[] Any
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://uri.etsi.org/01903/v1.3.2#")]
+    [System.Xml.Serialization.XmlRootAttribute("Any", Namespace = "http://uri.etsi.org/01903/v1.3.2#", IsNullable = false)]
+    public partial class AnyType
     {
-        get
+        private System.Xml.XmlNode[] anyField;
+        private System.Xml.XmlAttribute[] anyAttrField;
+        [System.Xml.Serialization.XmlTextAttribute()]
+        [System.Xml.Serialization.XmlAnyElementAttribute()]
+        public System.Xml.XmlNode[] Any
         {
-            return this.anyField;
+            get
+            {
+                return this.anyField;
+            }
+            set
+            {
+                this.anyField = value;
+            }
         }
-        set
+        [System.Xml.Serialization.XmlAnyAttributeAttribute()]
+        public System.Xml.XmlAttribute[] AnyAttr
         {
-            this.anyField = value;
-        }
-    }
-    [System.Xml.Serialization.XmlAnyAttributeAttribute()]
-    public System.Xml.XmlAttribute[] AnyAttr
-    {
-        get
-        {
-            return this.anyAttrField;
-        }
-        set
-        {
-            this.anyAttrField = value;
+            get
+            {
+                return this.anyAttrField;
+            }
+            set
+            {
+                this.anyAttrField = value;
+            }
         }
     }
 }

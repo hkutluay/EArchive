@@ -1,48 +1,50 @@
-//
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://uri.etsi.org/01903/v1.3.2#")]
-public partial class IdentifierType
+namespace EArchive.XAdESv132
 {
-    private QualifierType qualifierField;
-    private bool qualifierFieldSpecified;
-    private string valueField;
-    [System.Xml.Serialization.XmlAttributeAttribute()]
-    public QualifierType Qualifier
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://uri.etsi.org/01903/v1.3.2#")]
+    public partial class IdentifierType
     {
-        get
+        private QualifierType qualifierField;
+        private bool qualifierFieldSpecified;
+        private string valueField;
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public QualifierType Qualifier
         {
-            return this.qualifierField;
+            get
+            {
+                return this.qualifierField;
+            }
+            set
+            {
+                this.qualifierField = value;
+            }
         }
-        set
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool QualifierSpecified
         {
-            this.qualifierField = value;
+            get
+            {
+                return this.qualifierFieldSpecified;
+            }
+            set
+            {
+                this.qualifierFieldSpecified = value;
+            }
         }
-    }
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool QualifierSpecified
-    {
-        get
+        [System.Xml.Serialization.XmlTextAttribute(DataType = "anyURI")]
+        public string Value
         {
-            return this.qualifierFieldSpecified;
-        }
-        set
-        {
-            this.qualifierFieldSpecified = value;
-        }
-    }
-    [System.Xml.Serialization.XmlTextAttribute(DataType = "anyURI")]
-    public string Value
-    {
-        get
-        {
-            return this.valueField;
-        }
-        set
-        {
-            this.valueField = value;
+            get
+            {
+                return this.valueField;
+            }
+            set
+            {
+                this.valueField = value;
+            }
         }
     }
 }

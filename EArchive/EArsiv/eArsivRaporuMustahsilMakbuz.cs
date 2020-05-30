@@ -1,143 +1,146 @@
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://earsiv.efatura.gov.tr")]
-public partial class eArsivRaporuMustahsilMakbuz
+namespace EArchive.EArsiv
 {
-    private string makbuzNoField;
-    private string dosyaAdiField;
-    private string ozetDegerField;
-    private System.DateTime duzenlenmeTarihiField;
-    private System.DateTime duzenlenmeZamaniField;
-    private decimal toplamTutarField;
-    private decimal odenecekTutarField;
-    private eArsivRaporuMustahsilMakbuzParaBirimi paraBirimiField;
-    private eArsivRaporuMustahsilMakbuzVergiBilgisi vergiBilgisiField;
-    private aliciTypeMin mustahsilBilgileriField;
-    private eArsivRaporuMustahsilMakbuzYnOkcFisBilgisi[] ynOkcFisBilgisiField;
-    public string makbuzNo
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://earsiv.efatura.gov.tr")]
+    public partial class eArsivRaporuMustahsilMakbuz
     {
-        get
+        private string makbuzNoField;
+        private string dosyaAdiField;
+        private string ozetDegerField;
+        private System.DateTime duzenlenmeTarihiField;
+        private System.DateTime duzenlenmeZamaniField;
+        private decimal toplamTutarField;
+        private decimal odenecekTutarField;
+        private eArsivRaporuMustahsilMakbuzParaBirimi paraBirimiField;
+        private eArsivRaporuMustahsilMakbuzVergiBilgisi vergiBilgisiField;
+        private aliciTypeMin mustahsilBilgileriField;
+        private eArsivRaporuMustahsilMakbuzYnOkcFisBilgisi[] ynOkcFisBilgisiField;
+        public string makbuzNo
         {
-            return this.makbuzNoField;
+            get
+            {
+                return this.makbuzNoField;
+            }
+            set
+            {
+                this.makbuzNoField = value;
+            }
         }
-        set
+        public string dosyaAdi
         {
-            this.makbuzNoField = value;
+            get
+            {
+                return this.dosyaAdiField;
+            }
+            set
+            {
+                this.dosyaAdiField = value;
+            }
         }
-    }
-    public string dosyaAdi
-    {
-        get
+        public string ozetDeger
         {
-            return this.dosyaAdiField;
+            get
+            {
+                return this.ozetDegerField;
+            }
+            set
+            {
+                this.ozetDegerField = value;
+            }
         }
-        set
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "date")]
+        public System.DateTime duzenlenmeTarihi
         {
-            this.dosyaAdiField = value;
+            get
+            {
+                return this.duzenlenmeTarihiField;
+            }
+            set
+            {
+                this.duzenlenmeTarihiField = value;
+            }
         }
-    }
-    public string ozetDeger
-    {
-        get
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "time")]
+        public System.DateTime duzenlenmeZamani
         {
-            return this.ozetDegerField;
+            get
+            {
+                return this.duzenlenmeZamaniField;
+            }
+            set
+            {
+                this.duzenlenmeZamaniField = value;
+            }
         }
-        set
+        public decimal toplamTutar
         {
-            this.ozetDegerField = value;
+            get
+            {
+                return this.toplamTutarField;
+            }
+            set
+            {
+                this.toplamTutarField = value;
+            }
         }
-    }
-    [System.Xml.Serialization.XmlElementAttribute(DataType = "date")]
-    public System.DateTime duzenlenmeTarihi
-    {
-        get
+        public decimal odenecekTutar
         {
-            return this.duzenlenmeTarihiField;
+            get
+            {
+                return this.odenecekTutarField;
+            }
+            set
+            {
+                this.odenecekTutarField = value;
+            }
         }
-        set
+        public eArsivRaporuMustahsilMakbuzParaBirimi paraBirimi
         {
-            this.duzenlenmeTarihiField = value;
+            get
+            {
+                return this.paraBirimiField;
+            }
+            set
+            {
+                this.paraBirimiField = value;
+            }
         }
-    }
-    [System.Xml.Serialization.XmlElementAttribute(DataType = "time")]
-    public System.DateTime duzenlenmeZamani
-    {
-        get
+        public eArsivRaporuMustahsilMakbuzVergiBilgisi vergiBilgisi
         {
-            return this.duzenlenmeZamaniField;
+            get
+            {
+                return this.vergiBilgisiField;
+            }
+            set
+            {
+                this.vergiBilgisiField = value;
+            }
         }
-        set
+        public aliciTypeMin mustahsilBilgileri
         {
-            this.duzenlenmeZamaniField = value;
+            get
+            {
+                return this.mustahsilBilgileriField;
+            }
+            set
+            {
+                this.mustahsilBilgileriField = value;
+            }
         }
-    }
-    public decimal toplamTutar
-    {
-        get
+        [System.Xml.Serialization.XmlElementAttribute("ynOkcFisBilgisi")]
+        public eArsivRaporuMustahsilMakbuzYnOkcFisBilgisi[] ynOkcFisBilgisi
         {
-            return this.toplamTutarField;
-        }
-        set
-        {
-            this.toplamTutarField = value;
-        }
-    }
-    public decimal odenecekTutar
-    {
-        get
-        {
-            return this.odenecekTutarField;
-        }
-        set
-        {
-            this.odenecekTutarField = value;
-        }
-    }
-    public eArsivRaporuMustahsilMakbuzParaBirimi paraBirimi
-    {
-        get
-        {
-            return this.paraBirimiField;
-        }
-        set
-        {
-            this.paraBirimiField = value;
-        }
-    }
-    public eArsivRaporuMustahsilMakbuzVergiBilgisi vergiBilgisi
-    {
-        get
-        {
-            return this.vergiBilgisiField;
-        }
-        set
-        {
-            this.vergiBilgisiField = value;
-        }
-    }
-    public aliciTypeMin mustahsilBilgileri
-    {
-        get
-        {
-            return this.mustahsilBilgileriField;
-        }
-        set
-        {
-            this.mustahsilBilgileriField = value;
-        }
-    }
-    [System.Xml.Serialization.XmlElementAttribute("ynOkcFisBilgisi")]
-    public eArsivRaporuMustahsilMakbuzYnOkcFisBilgisi[] ynOkcFisBilgisi
-    {
-        get
-        {
-            return this.ynOkcFisBilgisiField;
-        }
-        set
-        {
-            this.ynOkcFisBilgisiField = value;
+            get
+            {
+                return this.ynOkcFisBilgisiField;
+            }
+            set
+            {
+                this.ynOkcFisBilgisiField = value;
+            }
         }
     }
 }

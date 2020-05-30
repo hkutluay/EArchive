@@ -1,45 +1,47 @@
-//
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://earsiv.efatura.gov.tr")]
-public partial class okcType
+namespace EArchive.EArsiv
 {
-    private string markaField;
-    private string modelField;
-    private string sicilNoField;
-    public string marka
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://earsiv.efatura.gov.tr")]
+    public partial class okcType
     {
-        get
+        private string markaField;
+        private string modelField;
+        private string sicilNoField;
+        public string marka
         {
-            return this.markaField;
+            get
+            {
+                return this.markaField;
+            }
+            set
+            {
+                this.markaField = value;
+            }
         }
-        set
+        public string model
         {
-            this.markaField = value;
+            get
+            {
+                return this.modelField;
+            }
+            set
+            {
+                this.modelField = value;
+            }
         }
-    }
-    public string model
-    {
-        get
+        public string sicilNo
         {
-            return this.modelField;
-        }
-        set
-        {
-            this.modelField = value;
-        }
-    }
-    public string sicilNo
-    {
-        get
-        {
-            return this.sicilNoField;
-        }
-        set
-        {
-            this.sicilNoField = value;
+            get
+            {
+                return this.sicilNoField;
+            }
+            set
+            {
+                this.sicilNoField = value;
+            }
         }
     }
 }

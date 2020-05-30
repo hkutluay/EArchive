@@ -1,45 +1,50 @@
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://uri.etsi.org/01903/v1.3.2#")]
-public partial class CertIDType
+using EArchive.XmlDSig;
+
+namespace EArchive.XAdESv132
 {
-    private DigestAlgAndValueType certDigestField;
-    private X509IssuerSerialType issuerSerialField;
-    private string uRIField;
-    public DigestAlgAndValueType CertDigest
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://uri.etsi.org/01903/v1.3.2#")]
+    public partial class CertIDType
     {
-        get
+        private DigestAlgAndValueType certDigestField;
+        private X509IssuerSerialType issuerSerialField;
+        private string uRIField;
+        public DigestAlgAndValueType CertDigest
         {
-            return this.certDigestField;
+            get
+            {
+                return this.certDigestField;
+            }
+            set
+            {
+                this.certDigestField = value;
+            }
         }
-        set
+        public X509IssuerSerialType IssuerSerial
         {
-            this.certDigestField = value;
+            get
+            {
+                return this.issuerSerialField;
+            }
+            set
+            {
+                this.issuerSerialField = value;
+            }
         }
-    }
-    public X509IssuerSerialType IssuerSerial
-    {
-        get
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
+        public string URI
         {
-            return this.issuerSerialField;
-        }
-        set
-        {
-            this.issuerSerialField = value;
-        }
-    }
-    [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
-    public string URI
-    {
-        get
-        {
-            return this.uRIField;
-        }
-        set
-        {
-            this.uRIField = value;
+            get
+            {
+                return this.uRIField;
+            }
+            set
+            {
+                this.uRIField = value;
+            }
         }
     }
 }

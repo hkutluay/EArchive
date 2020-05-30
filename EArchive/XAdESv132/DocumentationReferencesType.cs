@@ -1,21 +1,24 @@
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://uri.etsi.org/01903/v1.3.2#")]
-public partial class DocumentationReferencesType
+namespace EArchive.XAdESv132
 {
-    private string[] documentationReferenceField;
-    [System.Xml.Serialization.XmlElementAttribute("DocumentationReference", DataType = "anyURI")]
-    public string[] DocumentationReference
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://uri.etsi.org/01903/v1.3.2#")]
+    public partial class DocumentationReferencesType
     {
-        get
+        private string[] documentationReferenceField;
+        [System.Xml.Serialization.XmlElementAttribute("DocumentationReference", DataType = "anyURI")]
+        public string[] DocumentationReference
         {
-            return this.documentationReferenceField;
-        }
-        set
-        {
-            this.documentationReferenceField = value;
+            get
+            {
+                return this.documentationReferenceField;
+            }
+            set
+            {
+                this.documentationReferenceField = value;
+            }
         }
     }
 }

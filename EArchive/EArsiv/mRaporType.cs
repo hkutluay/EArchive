@@ -1,58 +1,60 @@
-//
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://earsiv.efatura.gov.tr")]
-public partial class mRaporType
+namespace EArchive.EArsiv
 {
-    private string mRaporNoField;
-    private string okcSicilNoField;
-    private decimal satisTutarField;
-    private vergiType[] vergiField;
-    public string mRaporNo
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://earsiv.efatura.gov.tr")]
+    public partial class mRaporType
     {
-        get
+        private string mRaporNoField;
+        private string okcSicilNoField;
+        private decimal satisTutarField;
+        private vergiType[] vergiField;
+        public string mRaporNo
         {
-            return this.mRaporNoField;
+            get
+            {
+                return this.mRaporNoField;
+            }
+            set
+            {
+                this.mRaporNoField = value;
+            }
         }
-        set
+        public string okcSicilNo
         {
-            this.mRaporNoField = value;
+            get
+            {
+                return this.okcSicilNoField;
+            }
+            set
+            {
+                this.okcSicilNoField = value;
+            }
         }
-    }
-    public string okcSicilNo
-    {
-        get
+        public decimal satisTutar
         {
-            return this.okcSicilNoField;
+            get
+            {
+                return this.satisTutarField;
+            }
+            set
+            {
+                this.satisTutarField = value;
+            }
         }
-        set
+        [System.Xml.Serialization.XmlElementAttribute("vergi")]
+        public vergiType[] vergi
         {
-            this.okcSicilNoField = value;
-        }
-    }
-    public decimal satisTutar
-    {
-        get
-        {
-            return this.satisTutarField;
-        }
-        set
-        {
-            this.satisTutarField = value;
-        }
-    }
-    [System.Xml.Serialization.XmlElementAttribute("vergi")]
-    public vergiType[] vergi
-    {
-        get
-        {
-            return this.vergiField;
-        }
-        set
-        {
-            this.vergiField = value;
+            get
+            {
+                return this.vergiField;
+            }
+            set
+            {
+                this.vergiField = value;
+            }
         }
     }
 }

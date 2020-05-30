@@ -1,168 +1,171 @@
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://earsiv.efatura.gov.tr")]
-public partial class eArsivRaporuSerbestMeslekMakbuz
+namespace EArchive.EArsiv
 {
-    private string makbuzNoField;
-    private eArsivRaporuSerbestMeslekMakbuzGonderimSekli gonderimSekliField;
-    private string dosyaAdiField;
-    private string ozetDegerField;
-    private System.DateTime duzenlenmeTarihiField;
-    private System.DateTime duzenlenmeZamaniField;
-    private bool duzenlenmeZamaniFieldSpecified;
-    private decimal toplamTutarField;
-    private decimal odenecekTutarField;
-    private eArsivRaporuSerbestMeslekMakbuzParaBirimi paraBirimiField;
-    private eArsivRaporuSerbestMeslekMakbuzVergiBilgisi vergiBilgisiField;
-    private aliciTypeMin aliciBilgileriField;
-    private eArsivRaporuSerbestMeslekMakbuzYnOkcFisBilgisi[] ynOkcFisBilgisiField;
-    public string makbuzNo
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://earsiv.efatura.gov.tr")]
+    public partial class eArsivRaporuSerbestMeslekMakbuz
     {
-        get
+        private string makbuzNoField;
+        private eArsivRaporuSerbestMeslekMakbuzGonderimSekli gonderimSekliField;
+        private string dosyaAdiField;
+        private string ozetDegerField;
+        private System.DateTime duzenlenmeTarihiField;
+        private System.DateTime duzenlenmeZamaniField;
+        private bool duzenlenmeZamaniFieldSpecified;
+        private decimal toplamTutarField;
+        private decimal odenecekTutarField;
+        private eArsivRaporuSerbestMeslekMakbuzParaBirimi paraBirimiField;
+        private eArsivRaporuSerbestMeslekMakbuzVergiBilgisi vergiBilgisiField;
+        private aliciTypeMin aliciBilgileriField;
+        private eArsivRaporuSerbestMeslekMakbuzYnOkcFisBilgisi[] ynOkcFisBilgisiField;
+        public string makbuzNo
         {
-            return this.makbuzNoField;
+            get
+            {
+                return this.makbuzNoField;
+            }
+            set
+            {
+                this.makbuzNoField = value;
+            }
         }
-        set
+        public eArsivRaporuSerbestMeslekMakbuzGonderimSekli gonderimSekli
         {
-            this.makbuzNoField = value;
+            get
+            {
+                return this.gonderimSekliField;
+            }
+            set
+            {
+                this.gonderimSekliField = value;
+            }
         }
-    }
-    public eArsivRaporuSerbestMeslekMakbuzGonderimSekli gonderimSekli
-    {
-        get
+        public string dosyaAdi
         {
-            return this.gonderimSekliField;
+            get
+            {
+                return this.dosyaAdiField;
+            }
+            set
+            {
+                this.dosyaAdiField = value;
+            }
         }
-        set
+        public string ozetDeger
         {
-            this.gonderimSekliField = value;
+            get
+            {
+                return this.ozetDegerField;
+            }
+            set
+            {
+                this.ozetDegerField = value;
+            }
         }
-    }
-    public string dosyaAdi
-    {
-        get
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "date")]
+        public System.DateTime duzenlenmeTarihi
         {
-            return this.dosyaAdiField;
+            get
+            {
+                return this.duzenlenmeTarihiField;
+            }
+            set
+            {
+                this.duzenlenmeTarihiField = value;
+            }
         }
-        set
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "time")]
+        public System.DateTime duzenlenmeZamani
         {
-            this.dosyaAdiField = value;
+            get
+            {
+                return this.duzenlenmeZamaniField;
+            }
+            set
+            {
+                this.duzenlenmeZamaniField = value;
+            }
         }
-    }
-    public string ozetDeger
-    {
-        get
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool duzenlenmeZamaniSpecified
         {
-            return this.ozetDegerField;
+            get
+            {
+                return this.duzenlenmeZamaniFieldSpecified;
+            }
+            set
+            {
+                this.duzenlenmeZamaniFieldSpecified = value;
+            }
         }
-        set
+        public decimal toplamTutar
         {
-            this.ozetDegerField = value;
+            get
+            {
+                return this.toplamTutarField;
+            }
+            set
+            {
+                this.toplamTutarField = value;
+            }
         }
-    }
-    [System.Xml.Serialization.XmlElementAttribute(DataType = "date")]
-    public System.DateTime duzenlenmeTarihi
-    {
-        get
+        public decimal odenecekTutar
         {
-            return this.duzenlenmeTarihiField;
+            get
+            {
+                return this.odenecekTutarField;
+            }
+            set
+            {
+                this.odenecekTutarField = value;
+            }
         }
-        set
+        public eArsivRaporuSerbestMeslekMakbuzParaBirimi paraBirimi
         {
-            this.duzenlenmeTarihiField = value;
+            get
+            {
+                return this.paraBirimiField;
+            }
+            set
+            {
+                this.paraBirimiField = value;
+            }
         }
-    }
-    [System.Xml.Serialization.XmlElementAttribute(DataType = "time")]
-    public System.DateTime duzenlenmeZamani
-    {
-        get
+        public eArsivRaporuSerbestMeslekMakbuzVergiBilgisi vergiBilgisi
         {
-            return this.duzenlenmeZamaniField;
+            get
+            {
+                return this.vergiBilgisiField;
+            }
+            set
+            {
+                this.vergiBilgisiField = value;
+            }
         }
-        set
+        public aliciTypeMin aliciBilgileri
         {
-            this.duzenlenmeZamaniField = value;
+            get
+            {
+                return this.aliciBilgileriField;
+            }
+            set
+            {
+                this.aliciBilgileriField = value;
+            }
         }
-    }
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool duzenlenmeZamaniSpecified
-    {
-        get
+        [System.Xml.Serialization.XmlElementAttribute("ynOkcFisBilgisi")]
+        public eArsivRaporuSerbestMeslekMakbuzYnOkcFisBilgisi[] ynOkcFisBilgisi
         {
-            return this.duzenlenmeZamaniFieldSpecified;
-        }
-        set
-        {
-            this.duzenlenmeZamaniFieldSpecified = value;
-        }
-    }
-    public decimal toplamTutar
-    {
-        get
-        {
-            return this.toplamTutarField;
-        }
-        set
-        {
-            this.toplamTutarField = value;
-        }
-    }
-    public decimal odenecekTutar
-    {
-        get
-        {
-            return this.odenecekTutarField;
-        }
-        set
-        {
-            this.odenecekTutarField = value;
-        }
-    }
-    public eArsivRaporuSerbestMeslekMakbuzParaBirimi paraBirimi
-    {
-        get
-        {
-            return this.paraBirimiField;
-        }
-        set
-        {
-            this.paraBirimiField = value;
-        }
-    }
-    public eArsivRaporuSerbestMeslekMakbuzVergiBilgisi vergiBilgisi
-    {
-        get
-        {
-            return this.vergiBilgisiField;
-        }
-        set
-        {
-            this.vergiBilgisiField = value;
-        }
-    }
-    public aliciTypeMin aliciBilgileri
-    {
-        get
-        {
-            return this.aliciBilgileriField;
-        }
-        set
-        {
-            this.aliciBilgileriField = value;
-        }
-    }
-    [System.Xml.Serialization.XmlElementAttribute("ynOkcFisBilgisi")]
-    public eArsivRaporuSerbestMeslekMakbuzYnOkcFisBilgisi[] ynOkcFisBilgisi
-    {
-        get
-        {
-            return this.ynOkcFisBilgisiField;
-        }
-        set
-        {
-            this.ynOkcFisBilgisiField = value;
+            get
+            {
+                return this.ynOkcFisBilgisiField;
+            }
+            set
+            {
+                this.ynOkcFisBilgisiField = value;
+            }
         }
     }
 }

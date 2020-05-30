@@ -1,9 +1,11 @@
-//
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://earsiv.efatura.gov.tr", IncludeInSchema = false)]
-public enum ItemChoiceType
+namespace EArchive.EArsiv
 {
-    tckn,
-    vkn,
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://earsiv.efatura.gov.tr", IncludeInSchema = false)]
+    public enum ItemChoiceType
+    {
+        tckn,
+        vkn,
+    }
 }

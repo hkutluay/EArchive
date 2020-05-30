@@ -1,32 +1,35 @@
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://uri.etsi.org/01903/v1.3.2#")]
-public partial class CRLRefType
+namespace EArchive.XAdESv132
 {
-    private DigestAlgAndValueType digestAlgAndValueField;
-    private CRLIdentifierType cRLIdentifierField;
-    public DigestAlgAndValueType DigestAlgAndValue
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://uri.etsi.org/01903/v1.3.2#")]
+    public partial class CRLRefType
     {
-        get
+        private DigestAlgAndValueType digestAlgAndValueField;
+        private CRLIdentifierType cRLIdentifierField;
+        public DigestAlgAndValueType DigestAlgAndValue
         {
-            return this.digestAlgAndValueField;
+            get
+            {
+                return this.digestAlgAndValueField;
+            }
+            set
+            {
+                this.digestAlgAndValueField = value;
+            }
         }
-        set
+        public CRLIdentifierType CRLIdentifier
         {
-            this.digestAlgAndValueField = value;
-        }
-    }
-    public CRLIdentifierType CRLIdentifier
-    {
-        get
-        {
-            return this.cRLIdentifierField;
-        }
-        set
-        {
-            this.cRLIdentifierField = value;
+            get
+            {
+                return this.cRLIdentifierField;
+            }
+            set
+            {
+                this.cRLIdentifierField = value;
+            }
         }
     }
 }

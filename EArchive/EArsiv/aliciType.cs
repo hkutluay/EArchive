@@ -1,44 +1,48 @@
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://earsiv.efatura.gov.tr")]
-public partial class aliciType
+namespace EArchive.EArsiv
 {
-    private aliciTypeTuzelKisi tuzelKisiField;
-    private aliciTypeGercekKisi gercekKisiField;
-    private string tesisatNumarasiField;
-    public aliciTypeTuzelKisi tuzelKisi
+
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://earsiv.efatura.gov.tr")]
+    public partial class aliciType
     {
-        get
+        private aliciTypeTuzelKisi tuzelKisiField;
+        private aliciTypeGercekKisi gercekKisiField;
+        private string tesisatNumarasiField;
+        public aliciTypeTuzelKisi tuzelKisi
         {
-            return this.tuzelKisiField;
+            get
+            {
+                return this.tuzelKisiField;
+            }
+            set
+            {
+                this.tuzelKisiField = value;
+            }
         }
-        set
+        public aliciTypeGercekKisi gercekKisi
         {
-            this.tuzelKisiField = value;
+            get
+            {
+                return this.gercekKisiField;
+            }
+            set
+            {
+                this.gercekKisiField = value;
+            }
         }
-    }
-    public aliciTypeGercekKisi gercekKisi
-    {
-        get
+        public string tesisatNumarasi
         {
-            return this.gercekKisiField;
-        }
-        set
-        {
-            this.gercekKisiField = value;
-        }
-    }
-    public string tesisatNumarasi
-    {
-        get
-        {
-            return this.tesisatNumarasiField;
-        }
-        set
-        {
-            this.tesisatNumarasiField = value;
+            get
+            {
+                return this.tesisatNumarasiField;
+            }
+            set
+            {
+                this.tesisatNumarasiField = value;
+            }
         }
     }
 }

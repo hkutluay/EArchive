@@ -1,33 +1,36 @@
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://earsiv.efatura.gov.tr")]
-public partial class eArsivRaporuFaturaInternetSatisBilgiGonderiBilgileri
+namespace EArchive.EArsiv
 {
-    private System.DateTime gonderimTarihiField;
-    private kisiType gonderiTasiyanField;
-    [System.Xml.Serialization.XmlElementAttribute(DataType = "date")]
-    public System.DateTime gonderimTarihi
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://earsiv.efatura.gov.tr")]
+    public partial class eArsivRaporuFaturaInternetSatisBilgiGonderiBilgileri
     {
-        get
+        private System.DateTime gonderimTarihiField;
+        private kisiType gonderiTasiyanField;
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "date")]
+        public System.DateTime gonderimTarihi
         {
-            return this.gonderimTarihiField;
+            get
+            {
+                return this.gonderimTarihiField;
+            }
+            set
+            {
+                this.gonderimTarihiField = value;
+            }
         }
-        set
+        public kisiType gonderiTasiyan
         {
-            this.gonderimTarihiField = value;
-        }
-    }
-    public kisiType gonderiTasiyan
-    {
-        get
-        {
-            return this.gonderiTasiyanField;
-        }
-        set
-        {
-            this.gonderiTasiyanField = value;
+            get
+            {
+                return this.gonderiTasiyanField;
+            }
+            set
+            {
+                this.gonderiTasiyanField = value;
+            }
         }
     }
 }

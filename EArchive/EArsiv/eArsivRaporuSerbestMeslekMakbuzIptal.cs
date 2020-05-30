@@ -1,45 +1,48 @@
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://earsiv.efatura.gov.tr")]
-public partial class eArsivRaporuSerbestMeslekMakbuzIptal
+namespace EArchive.EArsiv
 {
-    private string makbuzNoField;
-    private System.DateTime iptalTarihiField;
-    private decimal toplamTutarField;
-    public string makbuzNo
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://earsiv.efatura.gov.tr")]
+    public partial class eArsivRaporuSerbestMeslekMakbuzIptal
     {
-        get
+        private string makbuzNoField;
+        private System.DateTime iptalTarihiField;
+        private decimal toplamTutarField;
+        public string makbuzNo
         {
-            return this.makbuzNoField;
+            get
+            {
+                return this.makbuzNoField;
+            }
+            set
+            {
+                this.makbuzNoField = value;
+            }
         }
-        set
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "date")]
+        public System.DateTime iptalTarihi
         {
-            this.makbuzNoField = value;
+            get
+            {
+                return this.iptalTarihiField;
+            }
+            set
+            {
+                this.iptalTarihiField = value;
+            }
         }
-    }
-    [System.Xml.Serialization.XmlElementAttribute(DataType = "date")]
-    public System.DateTime iptalTarihi
-    {
-        get
+        public decimal toplamTutar
         {
-            return this.iptalTarihiField;
-        }
-        set
-        {
-            this.iptalTarihiField = value;
-        }
-    }
-    public decimal toplamTutar
-    {
-        get
-        {
-            return this.toplamTutarField;
-        }
-        set
-        {
-            this.toplamTutarField = value;
+            get
+            {
+                return this.toplamTutarField;
+            }
+            set
+            {
+                this.toplamTutarField = value;
+            }
         }
     }
 }

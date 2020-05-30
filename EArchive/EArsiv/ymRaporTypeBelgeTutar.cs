@@ -1,33 +1,35 @@
-//
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://earsiv.efatura.gov.tr")]
-public partial class ymRaporTypeBelgeTutar
+namespace EArchive.EArsiv
 {
-    private decimal tutarField;
-    private belgeTutarTipEnum tipField;
-    public decimal tutar
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://earsiv.efatura.gov.tr")]
+    public partial class ymRaporTypeBelgeTutar
     {
-        get
+        private decimal tutarField;
+        private belgeTutarTipEnum tipField;
+        public decimal tutar
         {
-            return this.tutarField;
+            get
+            {
+                return this.tutarField;
+            }
+            set
+            {
+                this.tutarField = value;
+            }
         }
-        set
+        public belgeTutarTipEnum tip
         {
-            this.tutarField = value;
-        }
-    }
-    public belgeTutarTipEnum tip
-    {
-        get
-        {
-            return this.tipField;
-        }
-        set
-        {
-            this.tipField = value;
+            get
+            {
+                return this.tipField;
+            }
+            set
+            {
+                this.tipField = value;
+            }
         }
     }
 }

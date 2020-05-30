@@ -1,109 +1,111 @@
-//
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://earsiv.efatura.gov.tr")]
-public partial class ymRaporType
+namespace EArchive.EArsiv
 {
-    private string ymRaporNoField;
-    private ymRaporTypeMukellef mukellefField;
-    private okcType okcField;
-    private string okcAylikSatisRaporNoField;
-    private satisType[] satisField;
-    private ymRaporTypeBelgeTutar[] belgeTutarField;
-    private ymRaporTypeOdemeTuruTutar[] odemeTuruTutarField;
-    private adetTutarType[] bilgiFisField;
-    public string ymRaporNo
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://earsiv.efatura.gov.tr")]
+    public partial class ymRaporType
     {
-        get
+        private string ymRaporNoField;
+        private ymRaporTypeMukellef mukellefField;
+        private okcType okcField;
+        private string okcAylikSatisRaporNoField;
+        private satisType[] satisField;
+        private ymRaporTypeBelgeTutar[] belgeTutarField;
+        private ymRaporTypeOdemeTuruTutar[] odemeTuruTutarField;
+        private adetTutarType[] bilgiFisField;
+        public string ymRaporNo
         {
-            return this.ymRaporNoField;
+            get
+            {
+                return this.ymRaporNoField;
+            }
+            set
+            {
+                this.ymRaporNoField = value;
+            }
         }
-        set
+        public ymRaporTypeMukellef mukellef
         {
-            this.ymRaporNoField = value;
+            get
+            {
+                return this.mukellefField;
+            }
+            set
+            {
+                this.mukellefField = value;
+            }
         }
-    }
-    public ymRaporTypeMukellef mukellef
-    {
-        get
+        public okcType okc
         {
-            return this.mukellefField;
+            get
+            {
+                return this.okcField;
+            }
+            set
+            {
+                this.okcField = value;
+            }
         }
-        set
+        public string okcAylikSatisRaporNo
         {
-            this.mukellefField = value;
+            get
+            {
+                return this.okcAylikSatisRaporNoField;
+            }
+            set
+            {
+                this.okcAylikSatisRaporNoField = value;
+            }
         }
-    }
-    public okcType okc
-    {
-        get
+        [System.Xml.Serialization.XmlElementAttribute("satis")]
+        public satisType[] satis
         {
-            return this.okcField;
+            get
+            {
+                return this.satisField;
+            }
+            set
+            {
+                this.satisField = value;
+            }
         }
-        set
+        [System.Xml.Serialization.XmlElementAttribute("belgeTutar")]
+        public ymRaporTypeBelgeTutar[] belgeTutar
         {
-            this.okcField = value;
+            get
+            {
+                return this.belgeTutarField;
+            }
+            set
+            {
+                this.belgeTutarField = value;
+            }
         }
-    }
-    public string okcAylikSatisRaporNo
-    {
-        get
+        [System.Xml.Serialization.XmlElementAttribute("odemeTuruTutar")]
+        public ymRaporTypeOdemeTuruTutar[] odemeTuruTutar
         {
-            return this.okcAylikSatisRaporNoField;
+            get
+            {
+                return this.odemeTuruTutarField;
+            }
+            set
+            {
+                this.odemeTuruTutarField = value;
+            }
         }
-        set
+        [System.Xml.Serialization.XmlElementAttribute("bilgiFis")]
+        public adetTutarType[] bilgiFis
         {
-            this.okcAylikSatisRaporNoField = value;
-        }
-    }
-    [System.Xml.Serialization.XmlElementAttribute("satis")]
-    public satisType[] satis
-    {
-        get
-        {
-            return this.satisField;
-        }
-        set
-        {
-            this.satisField = value;
-        }
-    }
-    [System.Xml.Serialization.XmlElementAttribute("belgeTutar")]
-    public ymRaporTypeBelgeTutar[] belgeTutar
-    {
-        get
-        {
-            return this.belgeTutarField;
-        }
-        set
-        {
-            this.belgeTutarField = value;
-        }
-    }
-    [System.Xml.Serialization.XmlElementAttribute("odemeTuruTutar")]
-    public ymRaporTypeOdemeTuruTutar[] odemeTuruTutar
-    {
-        get
-        {
-            return this.odemeTuruTutarField;
-        }
-        set
-        {
-            this.odemeTuruTutarField = value;
-        }
-    }
-    [System.Xml.Serialization.XmlElementAttribute("bilgiFis")]
-    public adetTutarType[] bilgiFis
-    {
-        get
-        {
-            return this.bilgiFisField;
-        }
-        set
-        {
-            this.bilgiFisField = value;
+            get
+            {
+                return this.bilgiFisField;
+            }
+            set
+            {
+                this.bilgiFisField = value;
+            }
         }
     }
 }

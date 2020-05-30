@@ -1,44 +1,47 @@
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://earsiv.efatura.gov.tr")]
-public partial class eArsivRaporuMustahsilMakbuzVergiBilgisiTevkifat
+namespace EArchive.EArsiv
 {
-    private string tevkifatKoduField;
-    private decimal tevkifatTutariField;
-    private decimal tevkifatOraniField;
-    public string tevkifatKodu
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://earsiv.efatura.gov.tr")]
+    public partial class eArsivRaporuMustahsilMakbuzVergiBilgisiTevkifat
     {
-        get
+        private string tevkifatKoduField;
+        private decimal tevkifatTutariField;
+        private decimal tevkifatOraniField;
+        public string tevkifatKodu
         {
-            return this.tevkifatKoduField;
+            get
+            {
+                return this.tevkifatKoduField;
+            }
+            set
+            {
+                this.tevkifatKoduField = value;
+            }
         }
-        set
+        public decimal tevkifatTutari
         {
-            this.tevkifatKoduField = value;
+            get
+            {
+                return this.tevkifatTutariField;
+            }
+            set
+            {
+                this.tevkifatTutariField = value;
+            }
         }
-    }
-    public decimal tevkifatTutari
-    {
-        get
+        public decimal tevkifatOrani
         {
-            return this.tevkifatTutariField;
-        }
-        set
-        {
-            this.tevkifatTutariField = value;
-        }
-    }
-    public decimal tevkifatOrani
-    {
-        get
-        {
-            return this.tevkifatOraniField;
-        }
-        set
-        {
-            this.tevkifatOraniField = value;
+            get
+            {
+                return this.tevkifatOraniField;
+            }
+            set
+            {
+                this.tevkifatOraniField = value;
+            }
         }
     }
 }

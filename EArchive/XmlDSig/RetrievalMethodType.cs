@@ -1,49 +1,51 @@
-//
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.w3.org/2000/09/xmldsig#")]
-[System.Xml.Serialization.XmlRootAttribute("RetrievalMethod", Namespace = "http://www.w3.org/2000/09/xmldsig#", IsNullable = false)]
-public partial class RetrievalMethodType
+namespace EArchive.XmlDSig
 {
-    private TransformType[] transformsField;
-    private string uRIField;
-    private string typeField;
-    [System.Xml.Serialization.XmlArrayItemAttribute("Transform", IsNullable = false)]
-    public TransformType[] Transforms
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.w3.org/2000/09/xmldsig#")]
+    [System.Xml.Serialization.XmlRootAttribute("RetrievalMethod", Namespace = "http://www.w3.org/2000/09/xmldsig#", IsNullable = false)]
+    public partial class RetrievalMethodType
     {
-        get
+        private TransformType[] transformsField;
+        private string uRIField;
+        private string typeField;
+        [System.Xml.Serialization.XmlArrayItemAttribute("Transform", IsNullable = false)]
+        public TransformType[] Transforms
         {
-            return this.transformsField;
+            get
+            {
+                return this.transformsField;
+            }
+            set
+            {
+                this.transformsField = value;
+            }
         }
-        set
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
+        public string URI
         {
-            this.transformsField = value;
+            get
+            {
+                return this.uRIField;
+            }
+            set
+            {
+                this.uRIField = value;
+            }
         }
-    }
-    [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
-    public string URI
-    {
-        get
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
+        public string Type
         {
-            return this.uRIField;
-        }
-        set
-        {
-            this.uRIField = value;
-        }
-    }
-    [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
-    public string Type
-    {
-        get
-        {
-            return this.typeField;
-        }
-        set
-        {
-            this.typeField = value;
+            get
+            {
+                return this.typeField;
+            }
+            set
+            {
+                this.typeField = value;
+            }
         }
     }
 }

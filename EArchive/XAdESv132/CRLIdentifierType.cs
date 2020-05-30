@@ -1,58 +1,61 @@
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://uri.etsi.org/01903/v1.3.2#")]
-public partial class CRLIdentifierType
+namespace EArchive.XAdESv132
 {
-    private string issuerField;
-    private System.DateTime issueTimeField;
-    private string numberField;
-    private string uRIField;
-    public string Issuer
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://uri.etsi.org/01903/v1.3.2#")]
+    public partial class CRLIdentifierType
     {
-        get
+        private string issuerField;
+        private System.DateTime issueTimeField;
+        private string numberField;
+        private string uRIField;
+        public string Issuer
         {
-            return this.issuerField;
+            get
+            {
+                return this.issuerField;
+            }
+            set
+            {
+                this.issuerField = value;
+            }
         }
-        set
+        public System.DateTime IssueTime
         {
-            this.issuerField = value;
+            get
+            {
+                return this.issueTimeField;
+            }
+            set
+            {
+                this.issueTimeField = value;
+            }
         }
-    }
-    public System.DateTime IssueTime
-    {
-        get
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "integer")]
+        public string Number
         {
-            return this.issueTimeField;
+            get
+            {
+                return this.numberField;
+            }
+            set
+            {
+                this.numberField = value;
+            }
         }
-        set
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
+        public string URI
         {
-            this.issueTimeField = value;
-        }
-    }
-    [System.Xml.Serialization.XmlElementAttribute(DataType = "integer")]
-    public string Number
-    {
-        get
-        {
-            return this.numberField;
-        }
-        set
-        {
-            this.numberField = value;
-        }
-    }
-    [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
-    public string URI
-    {
-        get
-        {
-            return this.uRIField;
-        }
-        set
-        {
-            this.uRIField = value;
+            get
+            {
+                return this.uRIField;
+            }
+            set
+            {
+                this.uRIField = value;
+            }
         }
     }
 }

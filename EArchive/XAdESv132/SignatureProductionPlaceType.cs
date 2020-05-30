@@ -1,58 +1,60 @@
-//
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://uri.etsi.org/01903/v1.3.2#")]
-[System.Xml.Serialization.XmlRootAttribute("SignatureProductionPlace", Namespace = "http://uri.etsi.org/01903/v1.3.2#", IsNullable = false)]
-public partial class SignatureProductionPlaceType
+namespace EArchive.XAdESv132
 {
-    private string cityField;
-    private string stateOrProvinceField;
-    private string postalCodeField;
-    private string countryNameField;
-    public string City
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://uri.etsi.org/01903/v1.3.2#")]
+    [System.Xml.Serialization.XmlRootAttribute("SignatureProductionPlace", Namespace = "http://uri.etsi.org/01903/v1.3.2#", IsNullable = false)]
+    public partial class SignatureProductionPlaceType
     {
-        get
+        private string cityField;
+        private string stateOrProvinceField;
+        private string postalCodeField;
+        private string countryNameField;
+        public string City
         {
-            return this.cityField;
+            get
+            {
+                return this.cityField;
+            }
+            set
+            {
+                this.cityField = value;
+            }
         }
-        set
+        public string StateOrProvince
         {
-            this.cityField = value;
+            get
+            {
+                return this.stateOrProvinceField;
+            }
+            set
+            {
+                this.stateOrProvinceField = value;
+            }
         }
-    }
-    public string StateOrProvince
-    {
-        get
+        public string PostalCode
         {
-            return this.stateOrProvinceField;
+            get
+            {
+                return this.postalCodeField;
+            }
+            set
+            {
+                this.postalCodeField = value;
+            }
         }
-        set
+        public string CountryName
         {
-            this.stateOrProvinceField = value;
-        }
-    }
-    public string PostalCode
-    {
-        get
-        {
-            return this.postalCodeField;
-        }
-        set
-        {
-            this.postalCodeField = value;
-        }
-    }
-    public string CountryName
-    {
-        get
-        {
-            return this.countryNameField;
-        }
-        set
-        {
-            this.countryNameField = value;
+            get
+            {
+                return this.countryNameField;
+            }
+            set
+            {
+                this.countryNameField = value;
+            }
         }
     }
 }

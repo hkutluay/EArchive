@@ -1,50 +1,52 @@
-//
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.w3.org/2000/09/xmldsig#")]
-[System.Xml.Serialization.XmlRootAttribute("Transform", Namespace = "http://www.w3.org/2000/09/xmldsig#", IsNullable = false)]
-public partial class TransformType
+namespace EArchive.XmlDSig
 {
-    private object[] itemsField;
-    private string[] textField;
-    private string algorithmField;
-    [System.Xml.Serialization.XmlAnyElementAttribute()]
-    [System.Xml.Serialization.XmlElementAttribute("XPath", typeof(string))]
-    public object[] Items
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.w3.org/2000/09/xmldsig#")]
+    [System.Xml.Serialization.XmlRootAttribute("Transform", Namespace = "http://www.w3.org/2000/09/xmldsig#", IsNullable = false)]
+    public partial class TransformType
     {
-        get
+        private object[] itemsField;
+        private string[] textField;
+        private string algorithmField;
+        [System.Xml.Serialization.XmlAnyElementAttribute()]
+        [System.Xml.Serialization.XmlElementAttribute("XPath", typeof(string))]
+        public object[] Items
         {
-            return this.itemsField;
+            get
+            {
+                return this.itemsField;
+            }
+            set
+            {
+                this.itemsField = value;
+            }
         }
-        set
+        [System.Xml.Serialization.XmlTextAttribute()]
+        public string[] Text
         {
-            this.itemsField = value;
+            get
+            {
+                return this.textField;
+            }
+            set
+            {
+                this.textField = value;
+            }
         }
-    }
-    [System.Xml.Serialization.XmlTextAttribute()]
-    public string[] Text
-    {
-        get
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
+        public string Algorithm
         {
-            return this.textField;
-        }
-        set
-        {
-            this.textField = value;
-        }
-    }
-    [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
-    public string Algorithm
-    {
-        get
-        {
-            return this.algorithmField;
-        }
-        set
-        {
-            this.algorithmField = value;
+            get
+            {
+                return this.algorithmField;
+            }
+            set
+            {
+                this.algorithmField = value;
+            }
         }
     }
 }

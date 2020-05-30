@@ -1,69 +1,72 @@
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://earsiv.efatura.gov.tr")]
-public partial class eArsivRaporuMustahsilMakbuzVergiBilgisiVergi
+namespace EArchive.EArsiv
 {
-    private decimal matrahField;
-    private eArsivRaporuMustahsilMakbuzVergiBilgisiVergiVergiKodu vergiKoduField;
-    private decimal vergiTutariField;
-    private decimal vergiOraniField;
-    private bool vergiOraniFieldSpecified;
-    public decimal matrah
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://earsiv.efatura.gov.tr")]
+    public partial class eArsivRaporuMustahsilMakbuzVergiBilgisiVergi
     {
-        get
+        private decimal matrahField;
+        private eArsivRaporuMustahsilMakbuzVergiBilgisiVergiVergiKodu vergiKoduField;
+        private decimal vergiTutariField;
+        private decimal vergiOraniField;
+        private bool vergiOraniFieldSpecified;
+        public decimal matrah
         {
-            return this.matrahField;
+            get
+            {
+                return this.matrahField;
+            }
+            set
+            {
+                this.matrahField = value;
+            }
         }
-        set
+        public eArsivRaporuMustahsilMakbuzVergiBilgisiVergiVergiKodu vergiKodu
         {
-            this.matrahField = value;
+            get
+            {
+                return this.vergiKoduField;
+            }
+            set
+            {
+                this.vergiKoduField = value;
+            }
         }
-    }
-    public eArsivRaporuMustahsilMakbuzVergiBilgisiVergiVergiKodu vergiKodu
-    {
-        get
+        public decimal vergiTutari
         {
-            return this.vergiKoduField;
+            get
+            {
+                return this.vergiTutariField;
+            }
+            set
+            {
+                this.vergiTutariField = value;
+            }
         }
-        set
+        public decimal vergiOrani
         {
-            this.vergiKoduField = value;
+            get
+            {
+                return this.vergiOraniField;
+            }
+            set
+            {
+                this.vergiOraniField = value;
+            }
         }
-    }
-    public decimal vergiTutari
-    {
-        get
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool vergiOraniSpecified
         {
-            return this.vergiTutariField;
-        }
-        set
-        {
-            this.vergiTutariField = value;
-        }
-    }
-    public decimal vergiOrani
-    {
-        get
-        {
-            return this.vergiOraniField;
-        }
-        set
-        {
-            this.vergiOraniField = value;
-        }
-    }
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool vergiOraniSpecified
-    {
-        get
-        {
-            return this.vergiOraniFieldSpecified;
-        }
-        set
-        {
-            this.vergiOraniFieldSpecified = value;
+            get
+            {
+                return this.vergiOraniFieldSpecified;
+            }
+            set
+            {
+                this.vergiOraniFieldSpecified = value;
+            }
         }
     }
 }

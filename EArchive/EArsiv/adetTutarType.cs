@@ -1,45 +1,49 @@
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://earsiv.efatura.gov.tr")]
-public partial class adetTutarType
+namespace EArchive.EArsiv
 {
-    private decimal tutarField;
-    private string adetField;
-    private bilgiFisTipEnum tipField;
-    public decimal tutar
+
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://earsiv.efatura.gov.tr")]
+    public partial class adetTutarType
     {
-        get
+        private decimal tutarField;
+        private string adetField;
+        private bilgiFisTipEnum tipField;
+        public decimal tutar
         {
-            return this.tutarField;
+            get
+            {
+                return this.tutarField;
+            }
+            set
+            {
+                this.tutarField = value;
+            }
         }
-        set
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "integer")]
+        public string adet
         {
-            this.tutarField = value;
+            get
+            {
+                return this.adetField;
+            }
+            set
+            {
+                this.adetField = value;
+            }
         }
-    }
-    [System.Xml.Serialization.XmlElementAttribute(DataType = "integer")]
-    public string adet
-    {
-        get
+        public bilgiFisTipEnum tip
         {
-            return this.adetField;
-        }
-        set
-        {
-            this.adetField = value;
-        }
-    }
-    public bilgiFisTipEnum tip
-    {
-        get
-        {
-            return this.tipField;
-        }
-        set
-        {
-            this.tipField = value;
+            get
+            {
+                return this.tipField;
+            }
+            set
+            {
+                this.tipField = value;
+            }
         }
     }
 }

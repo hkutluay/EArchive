@@ -1,96 +1,98 @@
-//
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://earsiv.efatura.gov.tr")]
-public partial class eArsivRaporuSerbestMeslekMakbuzYnOkcFisBilgisi
+namespace EArchive.EArsiv
 {
-    private string okcSeriNoField;
-    private string zNoField;
-    private string fisNoField;
-    private eArsivRaporuSerbestMeslekMakbuzYnOkcFisBilgisiFisTip fisTipField;
-    private System.DateTime fisTarihField;
-    private System.DateTime fisZamanField;
-    private bool fisZamanFieldSpecified;
-    public string okcSeriNo
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://earsiv.efatura.gov.tr")]
+    public partial class eArsivRaporuSerbestMeslekMakbuzYnOkcFisBilgisi
     {
-        get
+        private string okcSeriNoField;
+        private string zNoField;
+        private string fisNoField;
+        private eArsivRaporuSerbestMeslekMakbuzYnOkcFisBilgisiFisTip fisTipField;
+        private System.DateTime fisTarihField;
+        private System.DateTime fisZamanField;
+        private bool fisZamanFieldSpecified;
+        public string okcSeriNo
         {
-            return this.okcSeriNoField;
+            get
+            {
+                return this.okcSeriNoField;
+            }
+            set
+            {
+                this.okcSeriNoField = value;
+            }
         }
-        set
+        public string zNo
         {
-            this.okcSeriNoField = value;
+            get
+            {
+                return this.zNoField;
+            }
+            set
+            {
+                this.zNoField = value;
+            }
         }
-    }
-    public string zNo
-    {
-        get
+        public string fisNo
         {
-            return this.zNoField;
+            get
+            {
+                return this.fisNoField;
+            }
+            set
+            {
+                this.fisNoField = value;
+            }
         }
-        set
+        public eArsivRaporuSerbestMeslekMakbuzYnOkcFisBilgisiFisTip fisTip
         {
-            this.zNoField = value;
+            get
+            {
+                return this.fisTipField;
+            }
+            set
+            {
+                this.fisTipField = value;
+            }
         }
-    }
-    public string fisNo
-    {
-        get
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "date")]
+        public System.DateTime fisTarih
         {
-            return this.fisNoField;
+            get
+            {
+                return this.fisTarihField;
+            }
+            set
+            {
+                this.fisTarihField = value;
+            }
         }
-        set
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "time")]
+        public System.DateTime fisZaman
         {
-            this.fisNoField = value;
+            get
+            {
+                return this.fisZamanField;
+            }
+            set
+            {
+                this.fisZamanField = value;
+            }
         }
-    }
-    public eArsivRaporuSerbestMeslekMakbuzYnOkcFisBilgisiFisTip fisTip
-    {
-        get
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fisZamanSpecified
         {
-            return this.fisTipField;
-        }
-        set
-        {
-            this.fisTipField = value;
-        }
-    }
-    [System.Xml.Serialization.XmlElementAttribute(DataType = "date")]
-    public System.DateTime fisTarih
-    {
-        get
-        {
-            return this.fisTarihField;
-        }
-        set
-        {
-            this.fisTarihField = value;
-        }
-    }
-    [System.Xml.Serialization.XmlElementAttribute(DataType = "time")]
-    public System.DateTime fisZaman
-    {
-        get
-        {
-            return this.fisZamanField;
-        }
-        set
-        {
-            this.fisZamanField = value;
-        }
-    }
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool fisZamanSpecified
-    {
-        get
-        {
-            return this.fisZamanFieldSpecified;
-        }
-        set
-        {
-            this.fisZamanFieldSpecified = value;
+            get
+            {
+                return this.fisZamanFieldSpecified;
+            }
+            set
+            {
+                this.fisZamanFieldSpecified = value;
+            }
         }
     }
 }

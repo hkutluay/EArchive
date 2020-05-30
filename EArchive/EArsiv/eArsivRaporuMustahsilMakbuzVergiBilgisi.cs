@@ -1,46 +1,49 @@
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://earsiv.efatura.gov.tr")]
-public partial class eArsivRaporuMustahsilMakbuzVergiBilgisi
+namespace EArchive.EArsiv
 {
-    private decimal vergilerToplamiField;
-    private eArsivRaporuMustahsilMakbuzVergiBilgisiVergi[] vergiField;
-    private eArsivRaporuMustahsilMakbuzVergiBilgisiTevkifat[] tevkifatField;
-    public decimal vergilerToplami
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://earsiv.efatura.gov.tr")]
+    public partial class eArsivRaporuMustahsilMakbuzVergiBilgisi
     {
-        get
+        private decimal vergilerToplamiField;
+        private eArsivRaporuMustahsilMakbuzVergiBilgisiVergi[] vergiField;
+        private eArsivRaporuMustahsilMakbuzVergiBilgisiTevkifat[] tevkifatField;
+        public decimal vergilerToplami
         {
-            return this.vergilerToplamiField;
+            get
+            {
+                return this.vergilerToplamiField;
+            }
+            set
+            {
+                this.vergilerToplamiField = value;
+            }
         }
-        set
+        [System.Xml.Serialization.XmlElementAttribute("vergi")]
+        public eArsivRaporuMustahsilMakbuzVergiBilgisiVergi[] vergi
         {
-            this.vergilerToplamiField = value;
+            get
+            {
+                return this.vergiField;
+            }
+            set
+            {
+                this.vergiField = value;
+            }
         }
-    }
-    [System.Xml.Serialization.XmlElementAttribute("vergi")]
-    public eArsivRaporuMustahsilMakbuzVergiBilgisiVergi[] vergi
-    {
-        get
+        [System.Xml.Serialization.XmlElementAttribute("tevkifat")]
+        public eArsivRaporuMustahsilMakbuzVergiBilgisiTevkifat[] tevkifat
         {
-            return this.vergiField;
-        }
-        set
-        {
-            this.vergiField = value;
-        }
-    }
-    [System.Xml.Serialization.XmlElementAttribute("tevkifat")]
-    public eArsivRaporuMustahsilMakbuzVergiBilgisiTevkifat[] tevkifat
-    {
-        get
-        {
-            return this.tevkifatField;
-        }
-        set
-        {
-            this.tevkifatField = value;
+            get
+            {
+                return this.tevkifatField;
+            }
+            set
+            {
+                this.tevkifatField = value;
+            }
         }
     }
 }

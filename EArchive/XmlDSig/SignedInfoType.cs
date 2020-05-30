@@ -1,60 +1,62 @@
-//
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.w3.org/2000/09/xmldsig#")]
-[System.Xml.Serialization.XmlRootAttribute("SignedInfo", Namespace = "http://www.w3.org/2000/09/xmldsig#", IsNullable = false)]
-public partial class SignedInfoType
+namespace EArchive.XmlDSig
 {
-    private CanonicalizationMethodType canonicalizationMethodField;
-    private SignatureMethodType signatureMethodField;
-    private ReferenceType[] referenceField;
-    private string idField;
-    public CanonicalizationMethodType CanonicalizationMethod
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.w3.org/2000/09/xmldsig#")]
+    [System.Xml.Serialization.XmlRootAttribute("SignedInfo", Namespace = "http://www.w3.org/2000/09/xmldsig#", IsNullable = false)]
+    public partial class SignedInfoType
     {
-        get
+        private CanonicalizationMethodType canonicalizationMethodField;
+        private SignatureMethodType signatureMethodField;
+        private ReferenceType[] referenceField;
+        private string idField;
+        public CanonicalizationMethodType CanonicalizationMethod
         {
-            return this.canonicalizationMethodField;
+            get
+            {
+                return this.canonicalizationMethodField;
+            }
+            set
+            {
+                this.canonicalizationMethodField = value;
+            }
         }
-        set
+        public SignatureMethodType SignatureMethod
         {
-            this.canonicalizationMethodField = value;
+            get
+            {
+                return this.signatureMethodField;
+            }
+            set
+            {
+                this.signatureMethodField = value;
+            }
         }
-    }
-    public SignatureMethodType SignatureMethod
-    {
-        get
+        [System.Xml.Serialization.XmlElementAttribute("Reference")]
+        public ReferenceType[] Reference
         {
-            return this.signatureMethodField;
+            get
+            {
+                return this.referenceField;
+            }
+            set
+            {
+                this.referenceField = value;
+            }
         }
-        set
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "ID")]
+        public string Id
         {
-            this.signatureMethodField = value;
-        }
-    }
-    [System.Xml.Serialization.XmlElementAttribute("Reference")]
-    public ReferenceType[] Reference
-    {
-        get
-        {
-            return this.referenceField;
-        }
-        set
-        {
-            this.referenceField = value;
-        }
-    }
-    [System.Xml.Serialization.XmlAttributeAttribute(DataType = "ID")]
-    public string Id
-    {
-        get
-        {
-            return this.idField;
-        }
-        set
-        {
-            this.idField = value;
+            get
+            {
+                return this.idField;
+            }
+            set
+            {
+                this.idField = value;
+            }
         }
     }
 }

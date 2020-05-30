@@ -1,32 +1,36 @@
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://earsiv.efatura.gov.tr")]
-public partial class aliciTypeTuzelKisi
+namespace EArchive.EArsiv
 {
-    private string vknField;
-    private string unvanField;
-    public string vkn
+
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://earsiv.efatura.gov.tr")]
+    public partial class aliciTypeTuzelKisi
     {
-        get
+        private string vknField;
+        private string unvanField;
+        public string vkn
         {
-            return this.vknField;
+            get
+            {
+                return this.vknField;
+            }
+            set
+            {
+                this.vknField = value;
+            }
         }
-        set
+        public string unvan
         {
-            this.vknField = value;
-        }
-    }
-    public string unvan
-    {
-        get
-        {
-            return this.unvanField;
-        }
-        set
-        {
-            this.unvanField = value;
+            get
+            {
+                return this.unvanField;
+            }
+            set
+            {
+                this.unvanField = value;
+            }
         }
     }
 }

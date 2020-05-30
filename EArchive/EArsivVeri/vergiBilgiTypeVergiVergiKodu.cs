@@ -1,5 +1,3 @@
-
-/// <remarks/>
 namespace EArchive.EArsivVeri
 {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]

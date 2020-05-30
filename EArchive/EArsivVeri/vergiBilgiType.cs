@@ -3,7 +3,7 @@ namespace EArchive.EArsivVeri
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
+
     [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://earsiv.efatura.gov.tr")]
 
     public partial class vergiBilgiType
@@ -15,7 +15,7 @@ namespace EArchive.EArsivVeri
 
         private vergiBilgiTypeTevkifat[] tevkifatField;
 
-     
+
         public decimal vergilerToplami
         {
             get
@@ -28,7 +28,7 @@ namespace EArchive.EArsivVeri
             }
         }
 
-       
+
         [System.Xml.Serialization.XmlElementAttribute("vergi")]
         public vergiBilgiTypeVergi[] vergi
         {
@@ -42,7 +42,7 @@ namespace EArchive.EArsivVeri
             }
         }
 
-    
+
         [System.Xml.Serialization.XmlElementAttribute("tevkifat")]
         public vergiBilgiTypeTevkifat[] tevkifat
         {

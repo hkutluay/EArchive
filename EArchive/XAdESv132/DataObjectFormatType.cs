@@ -1,71 +1,74 @@
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://uri.etsi.org/01903/v1.3.2#")]
-[System.Xml.Serialization.XmlRootAttribute("DataObjectFormat", Namespace = "http://uri.etsi.org/01903/v1.3.2#", IsNullable = false)]
-public partial class DataObjectFormatType
+namespace EArchive.XAdESv132
 {
-    private string descriptionField;
-    private ObjectIdentifierType objectIdentifierField;
-    private string mimeTypeField;
-    private string encodingField;
-    private string objectReferenceField;
-    public string Description
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://uri.etsi.org/01903/v1.3.2#")]
+    [System.Xml.Serialization.XmlRootAttribute("DataObjectFormat", Namespace = "http://uri.etsi.org/01903/v1.3.2#", IsNullable = false)]
+    public partial class DataObjectFormatType
     {
-        get
+        private string descriptionField;
+        private ObjectIdentifierType objectIdentifierField;
+        private string mimeTypeField;
+        private string encodingField;
+        private string objectReferenceField;
+        public string Description
         {
-            return this.descriptionField;
+            get
+            {
+                return this.descriptionField;
+            }
+            set
+            {
+                this.descriptionField = value;
+            }
         }
-        set
+        public ObjectIdentifierType ObjectIdentifier
         {
-            this.descriptionField = value;
+            get
+            {
+                return this.objectIdentifierField;
+            }
+            set
+            {
+                this.objectIdentifierField = value;
+            }
         }
-    }
-    public ObjectIdentifierType ObjectIdentifier
-    {
-        get
+        public string MimeType
         {
-            return this.objectIdentifierField;
+            get
+            {
+                return this.mimeTypeField;
+            }
+            set
+            {
+                this.mimeTypeField = value;
+            }
         }
-        set
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "anyURI")]
+        public string Encoding
         {
-            this.objectIdentifierField = value;
+            get
+            {
+                return this.encodingField;
+            }
+            set
+            {
+                this.encodingField = value;
+            }
         }
-    }
-    public string MimeType
-    {
-        get
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
+        public string ObjectReference
         {
-            return this.mimeTypeField;
-        }
-        set
-        {
-            this.mimeTypeField = value;
-        }
-    }
-    [System.Xml.Serialization.XmlElementAttribute(DataType = "anyURI")]
-    public string Encoding
-    {
-        get
-        {
-            return this.encodingField;
-        }
-        set
-        {
-            this.encodingField = value;
-        }
-    }
-    [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
-    public string ObjectReference
-    {
-        get
-        {
-            return this.objectReferenceField;
-        }
-        set
-        {
-            this.objectReferenceField = value;
+            get
+            {
+                return this.objectReferenceField;
+            }
+            set
+            {
+                this.objectReferenceField = value;
+            }
         }
     }
 }

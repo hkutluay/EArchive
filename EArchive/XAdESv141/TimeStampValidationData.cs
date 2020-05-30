@@ -1,61 +1,66 @@
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://uri.etsi.org/01903/v1.4.1#")]
-[System.Xml.Serialization.XmlRootAttribute("TimeStampValidationData", Namespace = "http://uri.etsi.org/01903/v1.4.1#", IsNullable = false)]
-public partial class TimeStampValidationData
+using EArchive.XAdESv132;
+
+namespace EArchive.XAdESv141
 {
-    private CertificateValuesType certificateValuesField;
-    private RevocationValuesType revocationValuesField;
-    private string idField;
-    private string uRIField;
-    [System.Xml.Serialization.XmlElementAttribute(Namespace = "http://uri.etsi.org/01903/v1.3.2#")]
-    public CertificateValuesType CertificateValues
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://uri.etsi.org/01903/v1.4.1#")]
+    [System.Xml.Serialization.XmlRootAttribute("TimeStampValidationData", Namespace = "http://uri.etsi.org/01903/v1.4.1#", IsNullable = false)]
+    public partial class TimeStampValidationData
     {
-        get
+        private CertificateValuesType certificateValuesField;
+        private RevocationValuesType revocationValuesField;
+        private string idField;
+        private string uRIField;
+        [System.Xml.Serialization.XmlElementAttribute(Namespace = "http://uri.etsi.org/01903/v1.3.2#")]
+        public CertificateValuesType CertificateValues
         {
-            return this.certificateValuesField;
+            get
+            {
+                return this.certificateValuesField;
+            }
+            set
+            {
+                this.certificateValuesField = value;
+            }
         }
-        set
+        [System.Xml.Serialization.XmlElementAttribute(Namespace = "http://uri.etsi.org/01903/v1.3.2#")]
+        public RevocationValuesType RevocationValues
         {
-            this.certificateValuesField = value;
+            get
+            {
+                return this.revocationValuesField;
+            }
+            set
+            {
+                this.revocationValuesField = value;
+            }
         }
-    }
-    [System.Xml.Serialization.XmlElementAttribute(Namespace = "http://uri.etsi.org/01903/v1.3.2#")]
-    public RevocationValuesType RevocationValues
-    {
-        get
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "ID")]
+        public string Id
         {
-            return this.revocationValuesField;
+            get
+            {
+                return this.idField;
+            }
+            set
+            {
+                this.idField = value;
+            }
         }
-        set
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
+        public string URI
         {
-            this.revocationValuesField = value;
-        }
-    }
-    [System.Xml.Serialization.XmlAttributeAttribute(DataType = "ID")]
-    public string Id
-    {
-        get
-        {
-            return this.idField;
-        }
-        set
-        {
-            this.idField = value;
-        }
-    }
-    [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
-    public string URI
-    {
-        get
-        {
-            return this.uRIField;
-        }
-        set
-        {
-            this.uRIField = value;
+            get
+            {
+                return this.uRIField;
+            }
+            set
+            {
+                this.uRIField = value;
+            }
         }
     }
 }

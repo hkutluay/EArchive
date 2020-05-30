@@ -1,82 +1,85 @@
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://earsiv.efatura.gov.tr")]
-public partial class eArsivRaporuFaturaInternetSatisBilgi
+namespace EArchive.EArsiv
 {
-    private string webAdresiField;
-    private string odemeSekliField;
-    private string odemeAracisiAdiField;
-    private System.DateTime odemeTarihiField;
-    private bool odemeTarihiFieldSpecified;
-    private eArsivRaporuFaturaInternetSatisBilgiGonderiBilgileri gonderiBilgileriField;
-    public string webAdresi
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://earsiv.efatura.gov.tr")]
+    public partial class eArsivRaporuFaturaInternetSatisBilgi
     {
-        get
+        private string webAdresiField;
+        private string odemeSekliField;
+        private string odemeAracisiAdiField;
+        private System.DateTime odemeTarihiField;
+        private bool odemeTarihiFieldSpecified;
+        private eArsivRaporuFaturaInternetSatisBilgiGonderiBilgileri gonderiBilgileriField;
+        public string webAdresi
         {
-            return this.webAdresiField;
+            get
+            {
+                return this.webAdresiField;
+            }
+            set
+            {
+                this.webAdresiField = value;
+            }
         }
-        set
+        public string odemeSekli
         {
-            this.webAdresiField = value;
+            get
+            {
+                return this.odemeSekliField;
+            }
+            set
+            {
+                this.odemeSekliField = value;
+            }
         }
-    }
-    public string odemeSekli
-    {
-        get
+        public string odemeAracisiAdi
         {
-            return this.odemeSekliField;
+            get
+            {
+                return this.odemeAracisiAdiField;
+            }
+            set
+            {
+                this.odemeAracisiAdiField = value;
+            }
         }
-        set
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "date")]
+        public System.DateTime odemeTarihi
         {
-            this.odemeSekliField = value;
+            get
+            {
+                return this.odemeTarihiField;
+            }
+            set
+            {
+                this.odemeTarihiField = value;
+            }
         }
-    }
-    public string odemeAracisiAdi
-    {
-        get
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool odemeTarihiSpecified
         {
-            return this.odemeAracisiAdiField;
+            get
+            {
+                return this.odemeTarihiFieldSpecified;
+            }
+            set
+            {
+                this.odemeTarihiFieldSpecified = value;
+            }
         }
-        set
+        public eArsivRaporuFaturaInternetSatisBilgiGonderiBilgileri gonderiBilgileri
         {
-            this.odemeAracisiAdiField = value;
-        }
-    }
-    [System.Xml.Serialization.XmlElementAttribute(DataType = "date")]
-    public System.DateTime odemeTarihi
-    {
-        get
-        {
-            return this.odemeTarihiField;
-        }
-        set
-        {
-            this.odemeTarihiField = value;
-        }
-    }
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool odemeTarihiSpecified
-    {
-        get
-        {
-            return this.odemeTarihiFieldSpecified;
-        }
-        set
-        {
-            this.odemeTarihiFieldSpecified = value;
-        }
-    }
-    public eArsivRaporuFaturaInternetSatisBilgiGonderiBilgileri gonderiBilgileri
-    {
-        get
-        {
-            return this.gonderiBilgileriField;
-        }
-        set
-        {
-            this.gonderiBilgileriField = value;
+            get
+            {
+                return this.gonderiBilgileriField;
+            }
+            set
+            {
+                this.gonderiBilgileriField = value;
+            }
         }
     }
 }

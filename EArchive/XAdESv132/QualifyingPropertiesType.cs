@@ -1,60 +1,62 @@
-//
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://uri.etsi.org/01903/v1.3.2#")]
-[System.Xml.Serialization.XmlRootAttribute("QualifyingProperties", Namespace = "http://uri.etsi.org/01903/v1.3.2#", IsNullable = false)]
-public partial class QualifyingPropertiesType
+namespace EArchive.XAdESv132
 {
-    private SignedPropertiesType signedPropertiesField;
-    private UnsignedPropertiesType unsignedPropertiesField;
-    private string targetField;
-    private string idField;
-    public SignedPropertiesType SignedProperties
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://uri.etsi.org/01903/v1.3.2#")]
+    [System.Xml.Serialization.XmlRootAttribute("QualifyingProperties", Namespace = "http://uri.etsi.org/01903/v1.3.2#", IsNullable = false)]
+    public partial class QualifyingPropertiesType
     {
-        get
+        private SignedPropertiesType signedPropertiesField;
+        private UnsignedPropertiesType unsignedPropertiesField;
+        private string targetField;
+        private string idField;
+        public SignedPropertiesType SignedProperties
         {
-            return this.signedPropertiesField;
+            get
+            {
+                return this.signedPropertiesField;
+            }
+            set
+            {
+                this.signedPropertiesField = value;
+            }
         }
-        set
+        public UnsignedPropertiesType UnsignedProperties
         {
-            this.signedPropertiesField = value;
+            get
+            {
+                return this.unsignedPropertiesField;
+            }
+            set
+            {
+                this.unsignedPropertiesField = value;
+            }
         }
-    }
-    public UnsignedPropertiesType UnsignedProperties
-    {
-        get
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
+        public string Target
         {
-            return this.unsignedPropertiesField;
+            get
+            {
+                return this.targetField;
+            }
+            set
+            {
+                this.targetField = value;
+            }
         }
-        set
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "ID")]
+        public string Id
         {
-            this.unsignedPropertiesField = value;
-        }
-    }
-    [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
-    public string Target
-    {
-        get
-        {
-            return this.targetField;
-        }
-        set
-        {
-            this.targetField = value;
-        }
-    }
-    [System.Xml.Serialization.XmlAttributeAttribute(DataType = "ID")]
-    public string Id
-    {
-        get
-        {
-            return this.idField;
-        }
-        set
-        {
-            this.idField = value;
+            get
+            {
+                return this.idField;
+            }
+            set
+            {
+                this.idField = value;
+            }
         }
     }
 }

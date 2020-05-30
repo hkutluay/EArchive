@@ -1,33 +1,34 @@
-//
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://earsiv.efatura.gov.tr")]
-public partial class kisiType
+namespace EArchive.EArsiv
 {
-    private kisiTypeTuzelKisi tuzelKisiField;
-    private kisiTypeGercekKisi gercekKisiField;
-    public kisiTypeTuzelKisi tuzelKisi
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://earsiv.efatura.gov.tr")]
+    public partial class kisiType
     {
-        get
+        private kisiTypeTuzelKisi tuzelKisiField;
+        private kisiTypeGercekKisi gercekKisiField;
+        public kisiTypeTuzelKisi tuzelKisi
         {
-            return this.tuzelKisiField;
+            get
+            {
+                return this.tuzelKisiField;
+            }
+            set
+            {
+                this.tuzelKisiField = value;
+            }
         }
-        set
+        public kisiTypeGercekKisi gercekKisi
         {
-            this.tuzelKisiField = value;
-        }
-    }
-    public kisiTypeGercekKisi gercekKisi
-    {
-        get
-        {
-            return this.gercekKisiField;
-        }
-        set
-        {
-            this.gercekKisiField = value;
+            get
+            {
+                return this.gercekKisiField;
+            }
+            set
+            {
+                this.gercekKisiField = value;
+            }
         }
     }
 }

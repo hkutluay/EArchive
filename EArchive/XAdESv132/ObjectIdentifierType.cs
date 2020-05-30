@@ -1,46 +1,48 @@
-//
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://uri.etsi.org/01903/v1.3.2#")]
-[System.Xml.Serialization.XmlRootAttribute("ObjectIdentifier", Namespace = "http://uri.etsi.org/01903/v1.3.2#", IsNullable = false)]
-public partial class ObjectIdentifierType
+namespace EArchive.XAdESv132
 {
-    private IdentifierType identifierField;
-    private string descriptionField;
-    private DocumentationReferencesType documentationReferencesField;
-    public IdentifierType Identifier
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://uri.etsi.org/01903/v1.3.2#")]
+    [System.Xml.Serialization.XmlRootAttribute("ObjectIdentifier", Namespace = "http://uri.etsi.org/01903/v1.3.2#", IsNullable = false)]
+    public partial class ObjectIdentifierType
     {
-        get
+        private IdentifierType identifierField;
+        private string descriptionField;
+        private DocumentationReferencesType documentationReferencesField;
+        public IdentifierType Identifier
         {
-            return this.identifierField;
+            get
+            {
+                return this.identifierField;
+            }
+            set
+            {
+                this.identifierField = value;
+            }
         }
-        set
+        public string Description
         {
-            this.identifierField = value;
+            get
+            {
+                return this.descriptionField;
+            }
+            set
+            {
+                this.descriptionField = value;
+            }
         }
-    }
-    public string Description
-    {
-        get
+        public DocumentationReferencesType DocumentationReferences
         {
-            return this.descriptionField;
-        }
-        set
-        {
-            this.descriptionField = value;
-        }
-    }
-    public DocumentationReferencesType DocumentationReferences
-    {
-        get
-        {
-            return this.documentationReferencesField;
-        }
-        set
-        {
-            this.documentationReferencesField = value;
+            get
+            {
+                return this.documentationReferencesField;
+            }
+            set
+            {
+                this.documentationReferencesField = value;
+            }
         }
     }
 }

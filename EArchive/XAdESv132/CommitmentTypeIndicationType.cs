@@ -1,48 +1,51 @@
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://uri.etsi.org/01903/v1.3.2#")]
-[System.Xml.Serialization.XmlRootAttribute("CommitmentTypeIndication", Namespace = "http://uri.etsi.org/01903/v1.3.2#", IsNullable = false)]
-public partial class CommitmentTypeIndicationType
+namespace EArchive.XAdESv132
 {
-    private ObjectIdentifierType commitmentTypeIdField;
-    private object[] itemsField;
-    private AnyType[] commitmentTypeQualifiersField;
-    public ObjectIdentifierType CommitmentTypeId
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://uri.etsi.org/01903/v1.3.2#")]
+    [System.Xml.Serialization.XmlRootAttribute("CommitmentTypeIndication", Namespace = "http://uri.etsi.org/01903/v1.3.2#", IsNullable = false)]
+    public partial class CommitmentTypeIndicationType
     {
-        get
+        private ObjectIdentifierType commitmentTypeIdField;
+        private object[] itemsField;
+        private AnyType[] commitmentTypeQualifiersField;
+        public ObjectIdentifierType CommitmentTypeId
         {
-            return this.commitmentTypeIdField;
+            get
+            {
+                return this.commitmentTypeIdField;
+            }
+            set
+            {
+                this.commitmentTypeIdField = value;
+            }
         }
-        set
+        [System.Xml.Serialization.XmlElementAttribute("AllSignedDataObjects", typeof(object))]
+        [System.Xml.Serialization.XmlElementAttribute("ObjectReference", typeof(string), DataType = "anyURI")]
+        public object[] Items
         {
-            this.commitmentTypeIdField = value;
+            get
+            {
+                return this.itemsField;
+            }
+            set
+            {
+                this.itemsField = value;
+            }
         }
-    }
-    [System.Xml.Serialization.XmlElementAttribute("AllSignedDataObjects", typeof(object))]
-    [System.Xml.Serialization.XmlElementAttribute("ObjectReference", typeof(string), DataType = "anyURI")]
-    public object[] Items
-    {
-        get
+        [System.Xml.Serialization.XmlArrayItemAttribute("CommitmentTypeQualifier", IsNullable = false)]
+        public AnyType[] CommitmentTypeQualifiers
         {
-            return this.itemsField;
-        }
-        set
-        {
-            this.itemsField = value;
-        }
-    }
-    [System.Xml.Serialization.XmlArrayItemAttribute("CommitmentTypeQualifier", IsNullable = false)]
-    public AnyType[] CommitmentTypeQualifiers
-    {
-        get
-        {
-            return this.commitmentTypeQualifiersField;
-        }
-        set
-        {
-            this.commitmentTypeQualifiersField = value;
+            get
+            {
+                return this.commitmentTypeQualifiersField;
+            }
+            set
+            {
+                this.commitmentTypeQualifiersField = value;
+            }
         }
     }
 }
