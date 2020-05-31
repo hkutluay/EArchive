@@ -1,7 +1,11 @@
+using System;
+
 using EArchive.EArsiv;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.IO;
 using System.Xml.Serialization;
+
+using EArchive.Extensions;
 
 namespace EArchive.Test
 {
@@ -9,11 +13,12 @@ namespace EArchive.Test
     public class EArchiveReportTest
     {
         private readonly string _reportPath;
+        private readonly string _path;
 
         public EArchiveReportTest()
         {
-            var path = "TestFiles/";
-            _reportPath = $"{path}d9f15872-1c78-4f7f-b025-a35816c80ab9.xml";
+            _path = "TestFiles/";
+            _reportPath = $"{_path}d9f15872-1c78-4f7f-b025-a35816c80ab9.xml";
         }
 
         eArsivRaporu DeserializeEArsivRaporuXml(string path)
@@ -37,16 +42,7 @@ namespace EArchive.Test
         [TestMethod]
         public void SerializeReport()
         {
-            var report = new eArsivRaporu
-            {
-                baslik = new baslikType()
-                {
-                    bolumNo = 1,
-                    hazirlayan = new vknTcknType() { Item = "123456789" },
-                    raporNo = "2",
-                    versiyon = "1.0"
-                }
-            };
+            eArsivRaporu report = GetSampleReport();
 
 
             XmlSerializer xmlSerializer = new XmlSerializer(typeof(eArsivRaporu));
@@ -62,6 +58,36 @@ namespace EArchive.Test
 
         }
 
+        private static eArsivRaporu GetSampleReport()
+        {
+            var report = new eArsivRaporu
+            {
+                baslik = new baslikType()
+                {
+                    bolumNo = 1,
+                    hazirlayan = new vknTcknType() {Item = "123456789"},
+                    raporNo = "2",
+                    versiyon = "1.0"
+                }
+            };
+            return report;
+        }
+
+        [TestMethod]
+        public void SaveXmlShouldCreateFile()
+        {
+            var samplePathFile = $"{_path}{Guid.NewGuid().ToString()}.xml";
+
+            var report = GetSampleReport();
+
+            report.SaveXml(samplePathFile);
+
+            var reportCreated = File.Exists(samplePathFile);
+
+            Assert.IsTrue(reportCreated);
+
+            File.Delete(samplePathFile);
+        }
                
     }
 }
