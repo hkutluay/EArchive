@@ -23,10 +23,7 @@ private static void Main(string[] args)
         }
       };
 
-
-  XmlSerializer xmlSerializer = new XmlSerializer(typeof(eArsivRaporu));
-  using TextWriter writer = new StreamWriter(@"C:\Temp\TestReport.xml"); //path to document
-  xmlSerializer.Serialize(writer, report);
+  eArsivRaporu.SaveXml(@"C:\Temp\TestReport.xml"); //path to document
 }
 
  ```
