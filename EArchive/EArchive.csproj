@@ -6,6 +6,7 @@
     <Description>EArchive Report .Net Classes</Description>
     <RepositoryUrl>https://github.com/hkutluay/EArchive</RepositoryUrl>
     <PackageTags>earchive e-archive e-arşiv earşiv ymmmakbuzu ynokc ynokcfiş SerbestMeslekMakbuzu ymmrapor ymm</PackageTags>
+    <Version>1.1.0</Version>
   </PropertyGroup>
   <ItemGroup Condition="'$(TargetFramework)' == 'netstandard1.3'">
     <PackageReference Include="System.ComponentModel">
